@@ -1,0 +1,24 @@
+@use '@angular/material' as mat;
+
+.profile {
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+
+  .name {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .profile-pic {
+    width: 60%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    @include mat.elevation(3);
+  }
+}

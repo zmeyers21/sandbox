@@ -1,0 +1,46 @@
+@use '@angular/material' as mat;
+
+.header-container {
+  width: 100%;
+  position: relative;
+
+  .button-container {
+    width: calc(100% - 16px);
+    height: 48px;
+    padding: 0 8px;
+
+    .menu-icon {
+      font-size: 36px;
+      height: 36px;
+      width: 36px;
+      margin-top: 6px;
+      color: #868686;
+    }
+
+    .menu-icon:hover {
+      color: #747474;
+    } 
+  }
+
+  .menu {
+    width: 100%;
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    top: 48px;
+    left: 0;
+    z-index: 1;
+    @include mat.elevation(1);
+  }
+
+  .tab {
+    width: 100%;
+    text-align: center;
+    line-height: 42px;
+    border-bottom: solid 1px rgb(223, 223, 223);
+    cursor: pointer;
+  }
+
+  .tab:hover {
+    background-color: #bbc9b6;
+  }
+}

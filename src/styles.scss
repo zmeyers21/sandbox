@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+html {
+  font-family: 'Lato Bold', 'Lato Regular', 'Lato', sans-serif !important;
+}
+
+body {
+  margin: 0 !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.relative {
+  position: relative;
+}

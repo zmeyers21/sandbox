@@ -1,0 +1,13 @@
+<div class="header-container">
+  <div class="button-container flex">
+    <div class="w-pct-100">
+      <mat-icon class="menu-icon right" *ngIf="!menuActive$" (click)="toggleMenu()">menu</mat-icon>
+      <mat-icon class="menu-icon right" *ngIf="menuActive$" (click)="toggleMenu()">close</mat-icon>
+    </div>
+  </div>
+  <div class="menu" *ngIf="menuActive$">
+    <div class="tab" *ngFor="let tab of tabs$" (click)="navigate(tab.route)">
+      {{tab.title}}
+    </div>
+  </div>
+</div>

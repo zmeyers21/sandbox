@@ -1,0 +1,5 @@
+<div class="contact-card" *ngFor="let card of cards$" [ngClass]="{'border-bottom': !card.last}">
+  <div class="title">{{card.name}}</div>
+  <div><a href="mailto:{{card.email}}">{{card.email}}</a></div>
+  <div>{{card.phone}}</div>
+</div>
