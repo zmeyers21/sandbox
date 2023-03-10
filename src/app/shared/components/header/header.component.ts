@@ -28,8 +28,8 @@ export class HeaderComponent implements OnInit {
         route: 'about'
       },
       {
-        title: 'PRICING',
-        route: 'pricing'
+        title: 'DOWNLOAD',
+        route: 'download'
       },
       {
         title: 'CONTACT US',
