@@ -8,12 +8,7 @@ import * as filesaver from 'file-saver';
 })
 export class DownloadService {
 
-  jsonHeader = 'application/json; odata=verbose';
-  headers = { 'Content-Type': this.jsonHeader, Accept: this.jsonHeader };
-  filesArray: [];
-  showFileArray: [];
-
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
   get files() {
     return [
